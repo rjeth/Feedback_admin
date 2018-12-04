@@ -2,7 +2,7 @@
   <ul class="custom-scrollbar">
     <li class="logo-sn waves-effect">
       <div class="text-center">
-        <a href="#" class="pl-0"><img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" class=""></a>
+        <a href="#" class="pl-0"><img src="../dist/img/logo.png" class="mx-auto" style="height : 50px"></a>
       </div>
     </li>
     <li>
@@ -14,9 +14,9 @@
           </a>
         </li>
         <li>
-          <a  class="collapsible-header waves-effect arrow-r">
+          <a class="collapsible-header waves-effect arrow-r">
             <i class="fa fa-photo"></i>
-            Inventory<i class="fa fa-angle-down rotate-icon"></i>
+            Management<i class="fa fa-angle-down rotate-icon"></i>
           </a>
           <div class="collapsible-body">
             <ul>

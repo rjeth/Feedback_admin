@@ -1,72 +1,111 @@
-<section>
+<section class="mt-lg-5">
+  <div style="height: 5px"></div>
+  <!--Grid row-->
   <div class="row">
+    <!--Grid column-->
     <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card classic-admin-card primary-color">
-        <div class="card-body">
-          <div class="pull-right">
-            <i class="fa fa-money"></i>
+      <!--Card-->
+      <div class="card card-cascade cascading-admin-card">
+        <!--Card Data-->
+        <div class="admin-up">
+          <i class="fa fa-money primary-color"></i>
+          <div class="data">
+            <p>SALES</p>
+            <h4 class="font-weight-bold dark-grey-text">2000$</h4>
           </div>
-          <p class="white-text">SALES</p>
-          <h4>2000$</h4>
         </div>
-        <div class="progress">
-          <div class="progress-bar bg grey darken-3" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <!--/.Card Data-->
+        <!--Card content-->
+        <div class="card-body card-body-cascade">
+          <div class="progress mb-3">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <!--Text-->
+          <p class="card-text">Better than last week (25%)</p>
         </div>
-        <div class="card-body">
-          <p>Better than last week (25%)</p>
-        </div>
+        <!--/.Card content-->
       </div>
+      <!--/.Card-->
     </div>
+    <!--Grid column-->
+    <!--Grid column-->
     <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card classic-admin-card warning-color">
-        <div class="card-body">
-          <div class="pull-right">
-            <i class="fa fa-line-chart"></i>
+      <!--Card-->
+      <div class="card card-cascade cascading-admin-card">
+        <!--Card Data-->
+        <div class="admin-up">
+          <i class="fa fa-line-chart warning-color"></i>
+          <div class="data">
+            <p>SUBSCRIPTIONS</p>
+            <h4 class="font-weight-bold dark-grey-text">200</h4>
           </div>
-          <p>SUBSCRIPTIONS</p>
-          <h4>200</h4>
         </div>
-        <div class="progress">
-          <div class="progress-bar bg grey darken-3" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <!--/.Card Data-->
+        <!--Card content-->
+        <div class="card-body card-body-cascade">
+          <div class="progress mb-3">
+            <div class="progress-bar red accent-2" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <!--Text-->
+          <p class="card-text">Worse than last week (25%)</p>
         </div>
-        <div class="card-body">
-          <p>Worse than last week (25%)</p>
-        </div>
+        <!--/.Card content-->
       </div>
+      <!--/.Card-->
     </div>
+    <!--Grid column-->
+    <!--Grid column-->
     <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card classic-admin-card light-blue lighten-1">
-        <div class="card-body">
-          <div class="pull-right">
-            <i class="fa fa-pie-chart"></i>
+      <!--Card-->
+      <div class="card card-cascade cascading-admin-card">
+        <!--Card Data-->
+        <div class="admin-up">
+          <i class="fa fa-pie-chart light-blue lighten-1"></i>
+          <div class="data">
+            <p>TRAFFIC</p>
+            <h4 class="font-weight-bold dark-grey-text">20000</h4>
           </div>
-          <p>TRAFFIC</p>
-          <h4>20000</h4>
         </div>
-        <div class="progress">
-          <div class="progress-bar bg grey darken-4" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        <!--/.Card Data-->
+        <!--Card content-->
+        <div class="card-body card-body-cascade">
+          <div class="progress mb-3">
+            <div class="progress-bar red accent-2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <!--Text-->
+          <p class="card-text">Worse than last week (75%)</p>
         </div>
-        <div class="card-body">
-          <p>Better than last week (75%)</p>
-        </div>
+        <!--/.Card content-->
       </div>
+      <!--/.Card-->
     </div>
+    <!--Grid column-->
+    <!--Grid column-->
     <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card classic-admin-card red accent-2">
-        <div class="card-body">
-          <div class="pull-right">
-            <i class="fa fa-bar-chart"></i>
+      <!--Card-->
+      <div class="card card-cascade cascading-admin-card">
+        <!--Card Data-->
+        <div class="admin-up">
+          <i class="fa fa-bar-chart red accent-2"></i>
+          <div class="data">
+            <p>ORGANIC TRAFFIC</p>
+            <h4 class="font-weight-bold dark-grey-text">2000</h4>
           </div>
-          <p>ORGANIC TRAFFIC</p>
-          <h4>2000</h4>
         </div>
-        <div class="progress">
-          <div class="progress-bar bg grey darken-4" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <!--/.Card Data-->
+        <!--Card content-->
+        <div class="card-body card-body-cascade">
+          <div class="progress mb-3">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <!--Text-->
+          <p class="card-text">Better than last week (25%)</p>
         </div>
-        <div class="card-body">
-          <p>Better than last week (25%)</p>
-        </div>
+        <!--/.Card content-->
       </div>
+      <!--/.Card-->
     </div>
+    <!--Grid column-->
   </div>
+  <!--Grid row-->
 </section>

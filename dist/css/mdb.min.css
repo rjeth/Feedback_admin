@@ -19990,7 +19990,7 @@ button.toast-close-button {
 }
 
 .fixed-sn main,.hidden-sn main {
-    padding-top: 5.5rem
+  /*  padding-top: 5.5rem */
 }
 
 .picker__calendar-container thead {

@@ -1,11 +1,14 @@
 <?php include('../layout/header.php'); ?>
+<style media="screen">
+  
+</style>
 <body class="fixed-sn white-skin">
   <header>
     <?php include('../layout/side_nav.php'); ?>
     <?php include('../layout/nav_header.php'); ?>
   </header>
-  <main class="pt-5 mx-lg-5">
-    <div class="container-fluid mt-5">
+  <main>
+    <div class="container-fluid">
         <?php include('../components/dashboard.php'); ?>
     </div>
   </main>
