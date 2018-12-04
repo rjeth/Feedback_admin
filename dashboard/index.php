@@ -1,6 +1,6 @@
 <?php include('../layout/header.php'); ?>
 <style media="screen">
-  
+
 </style>
 <body class="fixed-sn white-skin">
   <header>
@@ -26,5 +26,10 @@
     // Tooltips Initialization
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('#side-val').text("Dashboard");
     })
   </script>

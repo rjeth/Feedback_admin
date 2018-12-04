@@ -24,17 +24,8 @@
               Password is required
             </div>
           </div>
-          <div class="row ">
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="agree" name="agree">
-              <label class="form-check-label" for="agree">remember me</label>
-            </div>
-            <div class="col">
-              <a class="pull-right" href="../forgot">forgot password</a>
-            </div>
-          </div>
           <div class="mt-5">
-            <button class="btn btn-mdb-color waves-effect waves-light z-depth-0" type="submit">Sign in</button>
+            <button class="btn aqua-gradient waves-effect waves-light z-depth-0" type="submit">Sign in</button>
           </div>
         </form>
       </div>

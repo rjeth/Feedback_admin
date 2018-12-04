@@ -7,7 +7,7 @@
   </div>
   <!-- Breadcrumb-->
   <div class="breadcrumb-dn mr-auto">
-    <p>Dashboard v.1</p>
+    <p id="side-val" name="side-val"></p>
   </div>
 
   <!--Navbar links-->
@@ -60,17 +60,14 @@
         <span class="clearfix d-none d-sm-inline-block">Profile</span></a>
     </a>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-      <a class="dropdown-item" href="../config/logout.php">Log Out</a>
+      <a class="dropdown-item" href="../login">Log Out</a>
       <a class="dropdown-item" href="#">My account</a>
     </div>
   </li>
 
 </ul>
-<!--/Navbar links-->
 </nav>
-<!-- /.Navbar -->
 
-<!-- Fixed button -->
 <div class="fixed-action-btn clearfix d-none d-xl-block" style="bottom: 45px; right: 24px;">
 <a class="btn-floating btn-lg red">
   <i class="fa fa-pencil"></i>

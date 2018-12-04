@@ -21,10 +21,10 @@
           <div class="collapsible-body">
             <ul>
               <li>
-                <a href="../pages/login.html" class="waves-effect">Add product</a>
+                <a href="../management-add" class="waves-effect">Add</a>
               </li>
               <li>
-                <a href="../inventory" class="waves-effect">Manage product</a>
+                <a href="../management" class="waves-effect">Manage</a>
               </li>
               <li>
                 <a href="../pages/login.html" class="waves-effect">Brands</a>
