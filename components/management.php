@@ -11,48 +11,22 @@
         <i class="fal fa-grip-horizontal"></i>
       </button>
     </div>
-
   </section>
 
   <section>
     <div class="card mb-5 ">
       <div class="card-body table-responsive">
         <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
-          <thead>
-            <tr>
-              <th class="th-sm"></th>
-              <th class="th-sm">NAME
-              </th>
-              <th class="th-sm">DESCRIPTION
-              </th>
-              <th class="th-sm">ACTION
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="col" width="50"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image" width="50"></td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td width="30">
-                <div class="mt-3 mx-auto">
-                  <a>
-                    <i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="View Information"></i>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
+    <thead>
+      <tr>
+        <th class="th-sm">Name
+        </th>
+        <th class="th-sm">Position
+        </th>
+        <th class="th-sm">Action
+        </th>
+      </tr>
+    </thead>
         </table>
       </div>
     </div>

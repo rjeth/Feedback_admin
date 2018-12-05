@@ -24,33 +24,52 @@
       $('[data-toggle="tooltip"]').tooltip()
     });
     $('.mdb_upload').mdb_upload();
-  (function () {
-    'use strict';
-    window.addEventListener('load', function () {
-      var forms = document.getElementsByClassName('needs-validation');
-      var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
     $(document).ready(function () {
       $('#side-val').text("User Management");
       $('#dtMaterialDesignExample').DataTable();
-      $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
-        $(this).parent().append($(this).children());
-      });
-      $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
-      $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
-      $('#dtMaterialDesignExample_wrapper select').removeClass('custom-select custom-select-sm form-control form-control-sm');
-      $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
-      $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
-      $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
+       $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
+         $(this).parent().append($(this).children());
+       });
+       $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('input').each(function () {
+         $('.dataTables_filter input').attr("placeholder", "Search");
+         $('.dataTables_filter input').removeClass('form-control-sm');
+       });
+       $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
+       $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
+       $('#dtMaterialDesignExample_wrapper select').removeClass(
+         'custom-select custom-select-sm form-control form-control-sm');
+       $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
+       $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
+       $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
     });
-
+  </script>
+  <script>
+    var table = $('#dtMaterialDesignExample').DataTable({
+      'order': [],
+      'ajax': {
+        url: 'sync.php',
+        method: 'POST'
+      },
+      'columnDefs': [
+        {
+          'targets': 2,
+          'orderable': false
+        }
+      ]
+    })
   </script>
