@@ -20,6 +20,7 @@
         <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
           <thead>
             <tr>
+              <th class="th-sm"></th>
               <th class="th-sm">NAME
               </th>
               <th class="th-sm">DESCRIPTION
@@ -30,18 +31,25 @@
           </thead>
           <tbody>
             <tr>
-              <td></td>
-              <td>System Architect</td>
+              <td scope="col" width="50"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image" width="50"></td>
               <td>
-                <a class="m-2">
-                  <i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i>
-                </a>
-                <a class="m-2">
-                  <i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
-                </a>
-                <a class="m-2">
-                  <i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="View Information"></i>
-                </a>
+                <p class="mt-3">Sample</p>
+              </td>
+              <td>
+                <p class="mt-3">Sample</p>
+              </td>
+              <td width="30">
+                <div class="mt-3 mx-auto">
+                  <a>
+                    <i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i>
+                  </a>
+                  <a>
+                    <i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
+                  </a>
+                  <a>
+                    <i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="View Information"></i>
+                  </a>
+                </div>
               </td>
             </tr>
           </tbody>
@@ -68,92 +76,78 @@
               <div class="w-75 mx-auto">
 
                 <div class="md-form">
-                  <label for="username">Surname</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
+                  <label for="surname">Surname</label>
+                  <input type="text" name="surname" class="form-control " id="surname" required="required">
                   <div class="invalid-feedback">
-                    Username is required
+                    Surname is required
                   </div>
                 </div>
 
                 <div class="md-form">
-                  <label for="username">First name</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
+                  <label for="firstname">First name</label>
+                  <input type="text" name="firstname" class="form-control " id="firstname" required="required">
                   <div class="invalid-feedback">
-                    Username is required
+                    Firstname is required
                   </div>
                 </div>
 
                 <div class="md-form">
-                  <label for="username">Last name</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
+                  <label for="lastname">Last name</label>
+                  <input type="text" name="lastname" class="form-control " id="lastname" required="required">
                   <div class="invalid-feedback">
-                    Username is required
+                    Lastname is required
                   </div>
                 </div>
 
                 <div class="md-form">
-                  <label for="username">Name extension</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
-                  <div class="invalid-feedback">
-                    Username is required
-                  </div>
+                  <label for="nameext">Name extension</label>
+                  <input type="text" name="nameext" class="form-control " id="nameext" aria-describedby="ext">
+                  <small id="ext-mute" class="form-text text-muted mb-4">
+                  (optional)
+                  </small>
                 </div>
 
-                <div align="left">
-                  <label for="username" style="color : #757575">Birthday</label>
-                  <input type="date" name="username" class="form-control datepicker" id="username" required="required">
+                <div align="left" class="mt-0">
+                  <label for="birthday" style="color : #757575">Birthday</label>
+                  <input type="date" name="birthday" class="form-control datepicker" id="birthday" required="required">
                   <div class="invalid-feedback">
-                    Username is required
+                    Birthday is required
                   </div>
                 </div>
 
                 <div class="md-form">
-                  <label for="username">Place of Birth</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
+                  <label for="placebirth">Place of Birth</label>
+                  <input type="text" name="placebirth" class="form-control " id="placebirth" required="required">
                   <div class="invalid-feedback">
-                    Username is required
+                    Place of Birth is required
                   </div>
                 </div>
 
-                <div  align="left">
+                <div align="left" class="form-check pl-0">
                   <label for="username" style="color : #757575">Gender</label>
                   <div class="">
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="materialInline1" name="inlineMaterialRadiosExample">
+                      <input type="radio" class="form-check-input" id="gender" name="gender" required>
                       <label class="form-check-label" for="materialInline1">Female</label>
                     </div>
 
                     <!-- Material inline 2 -->
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample">
+                      <input type="radio" class="form-check-input" id="gender" name="gender" required>
                       <label class="form-check-label" for="materialInline2">male</label>
                     </div>
                   </div>
-                </div>
-
-                <div class="md-form">
-                  <label for="username">Username</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
                   <div class="invalid-feedback">
-                    Username is required
+                    You must to select before submitting.
                   </div>
-                </div>
-
-                <div class="md-form">
-                  <label for="username">Password</label>
-                  <input type="password" name="password" class="form-control " id="password" required="required" aria-describedby="pass-mute">
-                  <div class="invalid-feedback">
-                    Password is required
-                  </div>
-                  <small id="pass-mute" class="form-text text-muted mb-4">
-                    All new passwords must contain at least 8 characters. We also suggest having at least one capital and one lower-case letter (Aa-Zz), one special symbol (#, &, % etc), and one number (0-9) in your password for the best strength.
-                  </small>
 
                 </div>
+
+
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-rounded btn-secondary" data-dismiss="modal">Close</button>
               <button type="submit" class="btn aqua-gradient btn-rounded waves-effect waves-light">Save changes</button>
             </div>
           </form>

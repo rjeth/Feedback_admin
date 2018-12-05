@@ -55,7 +55,7 @@
         <i class="fa fa-user"></i>
         <span class="clearfix d-none d-sm-inline-block">Profile</span></a>
     </a>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+    <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="userDropdown">
       <a class="dropdown-item" href="../login">Log Out</a>
       <a class="dropdown-item" href="#">My account</a>
     </div>

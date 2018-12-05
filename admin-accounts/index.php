@@ -8,7 +8,7 @@
   </header>
   <main>
     <div class="container-fluid">
-      <?php include('../components/division.php'); ?>
+      <?php include('../components/admin-acc.php'); ?>
     </div>
   </main>
   <?php include('../layout/footer.php'); ?>
@@ -39,7 +39,7 @@
     }, false);
   })();
     $(document).ready(function () {
-      $('#side-val').text("Division");
+      $('#side-val').text("Admin Accounts");
       $('#dtMaterialDesignExample').DataTable();
       $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
         $(this).parent().append($(this).children());

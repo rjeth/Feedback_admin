@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="mt-5">
-            <button class="btn aqua-gradient waves-effect waves-light z-depth-0" type="submit">Sign in</button>
+            <button class="btn aqua-gradient btn-rounded waves-effect waves-light z-depth-0" type="submit">Sign in</button>
           </div>
         </form>
       </div>

@@ -40,7 +40,7 @@
     }, false);
   })();
     $(document).ready(function () {
-      $('#side-val').text("Management");
+      $('#side-val').text("User Management");
       $('#dtMaterialDesignExample').DataTable();
       $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
         $(this).parent().append($(this).children());

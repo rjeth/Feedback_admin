@@ -20,7 +20,6 @@
         <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
           <thead>
             <tr>
-              <th class="th-sm"></th>
               <th class="th-sm">NAME
               </th>
               <th class="th-sm">DESCRIPTION
@@ -31,15 +30,14 @@
           </thead>
           <tbody>
             <tr>
-              <td scope="col" width="50"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image" width="50"></td>
               <td>
-                <p class="mt-3">Sample</p>
+                <p>Sample</p>
               </td>
               <td>
-                <p class="mt-3">Sample</p>
+                <p>Sample</p>
               </td>
               <td width="30">
-                <div class="mt-3 mx-auto">
+                <div class="mx-auto">
                   <a>
                     <i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i>
                   </a>
@@ -52,28 +50,7 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              <td scope="col" width="50"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image" width="50"></td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td width="30">
-                <div class="mt-3 mx-auto">
-                  <a>
-                    <i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="View Information"></i>
-                  </a>
-                </div>
-              </td>
-            </tr>
+
           </tbody>
         </table>
       </div>
@@ -94,33 +71,33 @@
             <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation" novalidate="novalidate">
               <div class="w-75 mx-auto">
                 <div class="md-form">
-                  <label for="username">Surname</label>
+                  <label for="username">Username</label>
                   <input type="text" name="username" class="form-control " id="username" required="required">
                   <div class="invalid-feedback">
                     Username is required
                   </div>
                 </div>
-
                 <div class="md-form">
-                  <label for="username">First name</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
+                  <label for="username">Password</label>
+                  <input type="password" name="password" class="form-control " id="password" required="required" aria-describedby="pass-mute">
                   <div class="invalid-feedback">
-                    Username is required
+                    Password is required
                   </div>
+                  <small id="pass-mute" class="form-text text-muted mb-4">
+                    All new passwords must contain at least 8 characters. We also suggest having at least one capital and one lower-case letter (Aa-Zz), one special symbol (#, &, % etc), and one number (0-9) in your password for the best strength.
+                  </small>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button class="btn btn-rounded btn-secondary" data-dismiss="modal">Close</button>
               <button type="submit" class="btn aqua-gradient btn-rounded waves-effect waves-light">Save changes</button>
             </div>
           </form>
+
         </div>
       </div>
     </div>
   </section>
 
 </section>
-<script>
-  $('.datepicker').pickadate();
-</script>
