@@ -2,21 +2,21 @@
   <ul class="custom-scrollbar">
     <li class="logo-sn waves-effect">
       <div class="text-center">
-        <a href="#" class="pl-0"><img src="../dist/img/logo.png" class="mx-auto" style="height : 50px"></a>
+        <a href="#" class="pl-0"><img src="../dist/img/logo.png" class="mx-auto" style="height : 80px"></a>
       </div>
     </li>
     <li>
       <ul class="collapsible collapsible-accordion">
         <li>
           <a href="../dashboard" class="collapsible-header waves-effect">
-            <i class="fa fa-tachometer"></i>
+            <i class="fa fa-poll-people"></i>
             Dashboards
           </a>
         </li>
         <li>
           <a class="collapsible-header waves-effect arrow-r">
-            <i class="fa fa-photo"></i>
-            Management<i class="fa fa-angle-down rotate-icon"></i>
+            <i class="fa fa-users"></i>
+            Management<i class="fal fa-angle-down rotate-icon"></i>
           </a>
           <div class="collapsible-body">
             <ul>
@@ -27,7 +27,7 @@
                 <a href="../management" class="waves-effect">Manage</a>
               </li>
               <li>
-                <a href="../pages/login.html" class="waves-effect">Brands</a>
+                <a href="../division" class="waves-effect">Division</a>
               </li>
             </ul>
           </div>
@@ -35,7 +35,7 @@
         <li>
           <a class="collapsible-header waves-effect arrow-r">
             <i class="fa fa-photo"></i>
-            Pages<i class="fa fa-angle-down rotate-icon"></i>
+            Pages<i class="fal fa-angle-down rotate-icon"></i>
           </a>
           <div class="collapsible-body">
             <ul>

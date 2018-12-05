@@ -1,7 +1,6 @@
 <section class="mt-lg-5">
   <div style="height: 5px"></div>
   <div class="row">
-
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card card-cascade cascading-admin-card">
         <div class="admin-up">

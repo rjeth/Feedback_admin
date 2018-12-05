@@ -2,18 +2,14 @@
   <!-- SideNav slide-out button -->
   <div class="float-left">
     <a href="#" data-activates="slide-out" class="button-collapse black-text">
-      <i class="fa fa-bars"></i>
+      <i class="fal fa-bars"></i>
     </a>
   </div>
   <!-- Breadcrumb-->
   <div class="breadcrumb-dn mr-auto">
     <p id="side-val" name="side-val"></p>
   </div>
-
-  <!--Navbar links-->
   <ul class="nav navbar-nav nav-flex-icons ml-auto">
-
-    <!-- Dropdown -->
     <li class="nav-item dropdown notifications-nav">
       <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="badge red">3</span>

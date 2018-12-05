@@ -62,9 +62,6 @@
           </div>
           <div class="modal-body">
             <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation" novalidate="novalidate">
-              <div class="fileupload-wrapper ml-0 mr-0 mb-3">
-                <input type="file" id="input-file-now" class="mdb_upload"/>
-              </div>
               <div class="w-75 mx-auto">
 
                 <div class="md-form">
@@ -81,74 +78,6 @@
                   <div class="invalid-feedback">
                     Username is required
                   </div>
-                </div>
-
-                <div class="md-form">
-                  <label for="username">Last name</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
-                  <div class="invalid-feedback">
-                    Username is required
-                  </div>
-                </div>
-
-                <div class="md-form">
-                  <label for="username">Name extension</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
-                  <div class="invalid-feedback">
-                    Username is required
-                  </div>
-                </div>
-
-                <div align="left">
-                  <label for="username" style="color : #757575">Birthday</label>
-                  <input type="date" name="username" class="form-control datepicker" id="username" required="required">
-                  <div class="invalid-feedback">
-                    Username is required
-                  </div>
-                </div>
-
-                <div class="md-form">
-                  <label for="username">Place of Birth</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
-                  <div class="invalid-feedback">
-                    Username is required
-                  </div>
-                </div>
-
-                <div  align="left">
-                  <label for="username" style="color : #757575">Gender</label>
-                  <div class="">
-                    <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="materialInline1" name="inlineMaterialRadiosExample">
-                      <label class="form-check-label" for="materialInline1">Female</label>
-                    </div>
-
-                    <!-- Material inline 2 -->
-                    <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample">
-                      <label class="form-check-label" for="materialInline2">male</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="md-form">
-                  <label for="username">Username</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
-                  <div class="invalid-feedback">
-                    Username is required
-                  </div>
-                </div>
-
-                <div class="md-form">
-                  <label for="username">Password</label>
-                  <input type="password" name="password" class="form-control " id="password" required="required" aria-describedby="pass-mute">
-                  <div class="invalid-feedback">
-                    Password is required
-                  </div>
-                  <small id="pass-mute" class="form-text text-muted mb-4">
-                    All new passwords must contain at least 8 characters. We also suggest having at least one capital and one lower-case letter (Aa-Zz), one special symbol (#, &, % etc), and one number (0-9) in your password for the best strength.
-                  </small>
-
                 </div>
               </div>
             </div>

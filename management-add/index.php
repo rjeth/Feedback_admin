@@ -11,6 +11,7 @@
     </div>
   </main>
   <?php include('../layout/footer.php'); ?>
+
   <script>
     $(".button-collapse").sideNav();
     var container = document.querySelector('.custom-scrollbar');
@@ -21,14 +22,11 @@
     });
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-  <script>
+    });
     $(document).ready(function () {
       $('#side-val').text("Add Management");
     });
-  </script>
-  <script>
+      $('.mdb_upload').mdb_upload();
     (function () {
       'use strict';
       window.addEventListener('load', function () {

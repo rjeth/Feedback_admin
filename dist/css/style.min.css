@@ -13752,9 +13752,9 @@ span[data-jarallax-element] {
 .side-nav .collapsible a {
     color: #fff;
     font-weight: 300;
-    font-size: .8rem;
-    height: 36px;
-    line-height: 36px
+    font-size: .9rem;
+    height: 40px;
+    line-height: 40px
 }
 
 .side-nav .collapsible a.active,.side-nav .collapsible a:hover {
@@ -13763,7 +13763,7 @@ span[data-jarallax-element] {
 }
 
 .side-nav .collapsible .fa {
-    font-size: .8rem;
+    font-size: .9rem;
     margin-right: 13px
 }
 
@@ -15348,7 +15348,7 @@ button.toast-close-button {
 }
 
 .white-skin .side-nav .collapsible li a {
-    font-weight: 400
+    font-weight: 300
 }
 
 .white-skin .side-nav .collapsible li .collapsible-header {
