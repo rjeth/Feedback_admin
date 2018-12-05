@@ -72,4 +72,65 @@
         }
       ]
     })
+    function Validate(){
+            $.ajax({
+                url:'function.php',
+                method:'POST',
+                data:$('#vform').serialize(),
+                success:function(data){
+                    swal(data,'','success',{
+                        closeOnClickOutside:false
+                    })
+                    .then((value) => {
+                        $('#exampleModal').modal('hide');
+                        table.ajax.reload();
+                    })
+                }
+            })
+            return false;
+        }
+        $('#add').click(function(){
+           $('#action').val('Add');
+           $('#loc').val('');
+       });
+       $(document).on('click','button[name="edit"]',function(){
+           $('#action').val('Edit');
+           var id = $(this).attr('id');
+           $.ajax({
+               url:'fetch_single.php',
+               method:'POST',
+               data:{
+                   id:id
+               },
+               dataType:'json',
+               success:function(data){
+                   $('#id').val(id);
+                   $('#exampleModal').modal('show');
+                   $('#loc').val(data.loc_name);
+               }
+           })
+       });
+       $(document).on('click','button[name="delete"]',function(){
+           $('#action').val('Delete');
+           var id = $(this).attr('id');
+           swal('Are you sure you want to delete this?','','warning',{
+               buttons:true,
+               dangerMode:true
+           })
+           .then((value) => {
+               if(value){
+                   $.ajax({
+                       url:'function.php',
+                       method:'POST',
+                       data:{
+                           id:id,
+                           action:'Delete'
+                       },
+                       success:function(data){
+                           table.ajax.reload();
+                       }
+                   })
+               }
+           })
+       });
   </script>
