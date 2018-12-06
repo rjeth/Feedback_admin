@@ -1,7 +1,7 @@
 <section>
   <section>
     <div class="mb-3" align="right">
-      <button type="button" class="btn btn-warning btn-floating" id="add"  data-toggle="modal" data-target="#exampleModalCenter">
+      <button type="button" class="btn btn-warning btn-floating" id="add" data-toggle="modal" data-target="#exampleModalCenter">
         <i class="fal fa-plus"></i>
       </button>
       <button type="button" class="btn btn-floating btn-danger">
@@ -34,7 +34,7 @@
 
   <section>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
@@ -44,10 +44,14 @@
           </div>
           <div class="modal-body">
             <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation" novalidate="novalidate">
-              <div class="fileupload-wrapper ml-0 mr-0 mb-3">
-                <input type="file" id="picuploader" name="picuploader" class="mdb_upload"/>
-              </div>
+
               <div class="w-75 mx-auto">
+                <div align="left" class="pl-0 mt-0">
+                  <label for="username" style="color : #757575">Gender</label>
+                  <div class="fileupload-wrapper ml-0 mr-0 mb-3">
+                    <input type="file" id="picuploader" name="picuploader" class="mdb_upload"/>
+                  </div>
+                </div>
 
                 <div class="md-form">
                   <label for="surname">Surname</label>
@@ -85,7 +89,7 @@
                   <label for="username" style="color : #757575">Gender</label>
                   <div class="">
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input"  name="gender" value="Female" required="required">
+                      <input type="radio" class="form-check-input" name="gender" value="Female" required="required">
                       <label class="form-check-label" for="materialInline1">Female</label>
                     </div>
 

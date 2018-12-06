@@ -1,9 +1,10 @@
 <?php
     include '../../core/config.php';
     $id = $_POST['id'];
-    $sql = mysqli_query($connect, "SELECT * FROM location WHERE loc_id = $id");
+    $sql = mysqli_query($connect, "SELECT * FROM userinfo WHERE ui_id = $id");
     $row = mysqli_fetch_assoc($sql);
     $output = array(
-        "loc_name" => $row['location_name']
+        "surname" => $row['sname'];
+
     );
     echo json_encode($output);

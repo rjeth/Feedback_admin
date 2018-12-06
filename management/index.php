@@ -71,7 +71,7 @@
                     closeOnClickOutside:false
                 })
                 .then((value) => {
-                    $('#exampleModal').modal('hide');
+                    $('#exampleModalCenter').modal('hide');
                     table.ajax.reload();
                 })
             }
@@ -80,6 +80,47 @@
     }
     $('#add').click(function () {
       $('#action').val('Add');
+    });
+    $(document).on('click','button[name="edit"]',function(){
+        $('#action').val('Edit');
+        var id = $(this).attr('id');
+        $.ajax({
+            url:'fetch_single.php',
+            method:'POST',
+            data:{
+                id:id
+            },
+            dataType:'json',
+            success:function(data){
+                $('#id').val(id);
+                $('#exampleModalCenter').modal('show');
+                $('#surname').val(data.surname);
+            }
+        })
+    });
+
+    $(document).on('click','button[name="delete"]',function(){
+        $('#action').val('Delete');
+        var id = $(this).attr('id');
+        swal('Are you sure you want to delete this?','','warning',{
+            buttons:true,
+            dangerMode:true
+        })
+        .then((value) => {
+            if(value){
+                $.ajax({
+                    url:'function.php',
+                    method:'POST',
+                    data:{
+                        id:id,
+                        action:'Delete'
+                    },
+                    success:function(data){
+                        table.ajax.reload();
+                    }
+                })
+            }
+        })
     });
   </script>
   <script>

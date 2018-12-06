@@ -3,7 +3,9 @@
     $sql = mysqli_query($connect, "SELECT * FROM userinfo");
     $output = array('data' => array());
     while ($row = mysqli_fetch_assoc($sql)) {
-        $button = '<a name="edit" ui_id="'.$row['ui_id'].'"><i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i></a>&nbsp;<a name="delete" ui_id="'.$row['ui_id'].'"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i></a>&nbsp;<a name="view" ui_id="'.$row['ui_id'].'"><i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="view Information"></i></a>';
+        $button =
+        '<button type="button" class="btn btn-info" name="edit" id="'.$row['id'].'"><i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i></button>&nbsp;
+        <button type="button" class="btn btn-danger" name="delete" id="'.$row['id'].'"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i></button>';
         $output['data'][] = array(
             $row['sname'],
             $row['fname'],
