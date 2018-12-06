@@ -9,5 +9,6 @@
     <link rel="stylesheet"  href="../dist/css/compiled-4.5.14.min.css"/>
     <link rel="stylesheet"  href="../dist/css/style.min.css"/>
     <link rel="stylesheet"  href="../dist/css/all.css"/>
+      <link rel="stylesheet"  href="../dist/css/mdsweet.css"/>
     <link href="../dist/css/addons/datatables.min.css" rel="stylesheet">
   </head>

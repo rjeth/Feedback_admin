@@ -68,20 +68,23 @@
             data:$('#vform').serialize(),
             success:function(data){
                 swal(data,'','success',{
-                    closeOnClickOutside:false
+                  swal.close()
+                  showConfirmButton: false
                 })
                 .then((value) => {
                     $('#exampleModalCenter').modal('hide');
+                      toastr["success"]("I was launched via jQuery!");
                     table.ajax.reload();
                 })
             }
         })
         return false;
     }
-    $('#add').click(function () {
-      $('#action').val('Add');
+    $('#add').click(function(){
+        $('#action').val('Add');
+        $('#surname').val('');
     });
-    $(document).on('click','button[name="edit"]',function(){
+    $(document).on('click','a[name="edit"]',function(){
         $('#action').val('Edit');
         var id = $(this).attr('id');
         $.ajax({
@@ -94,12 +97,12 @@
             success:function(data){
                 $('#id').val(id);
                 $('#exampleModalCenter').modal('show');
-                $('#surname').val(data.surname);
+                $('#surname').val(data.sname);
             }
         })
     });
 
-    $(document).on('click','button[name="delete"]',function(){
+    $(document).on('click','a[name="delete"]',function(){
         $('#action').val('Delete');
         var id = $(this).attr('id');
         swal('Are you sure you want to delete this?','','warning',{
@@ -116,6 +119,7 @@
                         action:'Delete'
                     },
                     success:function(data){
+                        toastr["info"]("I was launched via jQuery!");
                         table.ajax.reload();
                     }
                 })
