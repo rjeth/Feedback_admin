@@ -8,13 +8,35 @@
     $bdayplace = $_POST['placebirth'];
     $gender = $_POST['gender'];
     $new_name = rand(). '.' ."jpeg";
-    $destination = 'upload/' . $new_name;
-    move_uploaded_file($_FILES['image_file']['tmp_name'], $destination);
+    $destination = '../upload/' . $new_name;
+    move_uploaded_file($_FILES['picuploader']['tmp_name'], $destination);
 
     $action = $_POST['action'];
     $id = $_POST['id'];
     if ($action == 'Add') {
-        mysqli_query($connect, "INSERT INTO location (location_name)VALUES('$loc')");
+        mysqli_query(
+            $connect,
+            "INSERT INTO userinfo (
+          sname,
+          fname,
+          lname,
+          extname,
+          age,
+          birthdate,
+          birthplace,
+          gender,
+          image
+        )VALUES(
+          '$sname',
+          '$fname',
+          '$lname',
+          '$extname',
+          '$bday',
+          '$bdayplace',
+          '$gender',
+          '$new_name'
+        )"
+      );
         echo 'Added Successfully';
     }
     if ($action == 'Edit') {

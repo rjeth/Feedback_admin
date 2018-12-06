@@ -85,13 +85,13 @@
                   <label for="username" style="color : #757575">Gender</label>
                   <div class="">
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="gender" name="gender" required="required">
+                      <input type="radio" class="form-check-input"  name="gender" id="Female" required="required">
                       <label class="form-check-label" for="materialInline1">Female</label>
                     </div>
 
                     <!-- Material inline 2 -->
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="gender" name="gender" required="required">
+                      <input type="radio" class="form-check-input" name="gender" id="male" required="required">
                       <label class="form-check-label" for="materialInline2">male</label>
                     </div>
                   </div>
@@ -107,7 +107,7 @@
                     Birthday is required
                   </div>
                 </div>
-          
+
                 <div class="md-form">
                   <label for="placebirth">Place of Birth</label>
                   <input type="text" name="placebirth" class="form-control " id="placebirth" required="required">
