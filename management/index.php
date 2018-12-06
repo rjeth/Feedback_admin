@@ -56,6 +56,7 @@
        $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
        $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
        $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
+       $('.datepicker').pickadate();
     });
   </script>
   <script>
@@ -78,11 +79,9 @@
                 method:'POST',
                 data:$('#vform').serialize(),
                 success:function(data){
-                    swal(data,'','success',{
-                        closeOnClickOutside:false
-                    })
+                  toastr["info"]("I was launched via jQuery!"))
                     .then((value) => {
-                        $('#exampleModal').modal('hide');
+                        $('#dtMaterialDesignExample').modal('hide');
                         table.ajax.reload();
                     })
                 }

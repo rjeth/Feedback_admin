@@ -1,6 +1,16 @@
 <?php
     include '../../core/config.php';
-    $loc = $_POST['loc'];
+    $sname = $_POST['surname'];
+    $fname = $_POST['firstname'];
+    $lname = $_POST['lastname'];
+    $extname = $_POST['nameext'];
+    $bday = $_POST['birthday'];
+    $bdayplace = $_POST['placebirth'];
+    $gender = $_POST['gender'];
+    $new_name = rand(). '.' ."jpeg";
+    $destination = 'upload/' . $new_name;
+    move_uploaded_file($_FILES['image_file']['tmp_name'], $destination);
+
     $action = $_POST['action'];
     $id = $_POST['id'];
     if ($action == 'Add') {

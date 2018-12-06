@@ -17,16 +17,16 @@
     <div class="card mb-5 ">
       <div class="card-body table-responsive">
         <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
-    <thead>
-      <tr>
-        <th class="th-sm">Name
-        </th>
-        <th class="th-sm">Position
-        </th>
-        <th class="th-sm">Action
-        </th>
-      </tr>
-    </thead>
+          <thead>
+            <tr>
+              <th class="th-sm">Name
+              </th>
+              <th class="th-sm">Position
+              </th>
+              <th class="th-sm">Action
+              </th>
+            </tr>
+          </thead>
         </table>
       </div>
     </div>
@@ -45,7 +45,7 @@
           <div class="modal-body">
             <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation" novalidate="novalidate">
               <div class="fileupload-wrapper ml-0 mr-0 mb-3">
-                <input type="file" id="input-file-now" class="mdb_upload"/>
+                <input type="file" id="picuploader" name="picuploader" class="mdb_upload"/>
               </div>
               <div class="w-75 mx-auto">
 
@@ -77,8 +77,27 @@
                   <label for="nameext">Name extension</label>
                   <input type="text" name="nameext" class="form-control " id="nameext" aria-describedby="ext">
                   <small id="ext-mute" class="form-text text-muted mb-4">
-                  (optional)
+                    (optional)
                   </small>
+                </div>
+
+                <div align="left" class="form-check pl-0">
+                  <label for="username" style="color : #757575">Gender</label>
+                  <div class="">
+                    <div class="form-check form-check-inline">
+                      <input type="radio" class="form-check-input" id="gender" name="gender" required="required">
+                      <label class="form-check-label" for="materialInline1">Female</label>
+                    </div>
+
+                    <!-- Material inline 2 -->
+                    <div class="form-check form-check-inline">
+                      <input type="radio" class="form-check-input" id="gender" name="gender" required="required">
+                      <label class="form-check-label" for="materialInline2">male</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    You must to select before submitting.
+                  </div>
                 </div>
 
                 <div align="left" class="mt-0">
@@ -88,7 +107,7 @@
                     Birthday is required
                   </div>
                 </div>
-
+          
                 <div class="md-form">
                   <label for="placebirth">Place of Birth</label>
                   <input type="text" name="placebirth" class="form-control " id="placebirth" required="required">
@@ -96,27 +115,6 @@
                     Place of Birth is required
                   </div>
                 </div>
-
-                <div align="left" class="form-check pl-0">
-                  <label for="username" style="color : #757575">Gender</label>
-                  <div class="">
-                    <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="gender" name="gender" required>
-                      <label class="form-check-label" for="materialInline1">Female</label>
-                    </div>
-
-                    <!-- Material inline 2 -->
-                    <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" id="gender" name="gender" required>
-                      <label class="form-check-label" for="materialInline2">male</label>
-                    </div>
-                  </div>
-                  <div class="invalid-feedback">
-                    You must to select before submitting.
-                  </div>
-
-                </div>
-
 
               </div>
             </div>
