@@ -72,7 +72,10 @@
           'orderable': false
         }
       ]
-    })
+    });
+    $('#add').click(function(){
+        $('#action').val('Add');
+    });
     function Validate(){
             $.ajax({
                 url:'function.php',

@@ -6,7 +6,7 @@
     $extname = $_POST['nameext'];
     $bday = $_POST['birthday'];
     $bdayplace = $_POST['placebirth'];
-    $gender = $_POST['gender'];
+    $gender = $_POST['ugender'];
     $new_name = rand(). '.' ."jpeg";
     $destination = '../upload/' . $new_name;
     move_uploaded_file($_FILES['picuploader']['tmp_name'], $destination);

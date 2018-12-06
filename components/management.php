@@ -1,7 +1,7 @@
 <section>
   <section>
     <div class="mb-3" align="right">
-      <button type="button" class="btn btn-warning btn-floating" data-toggle="modal" data-target="#exampleModalCenter">
+      <button type="button" class="btn btn-warning btn-floating" id="add"  data-toggle="modal" data-target="#exampleModalCenter">
         <i class="fal fa-plus"></i>
       </button>
       <button type="button" class="btn btn-floating btn-danger">
@@ -76,22 +76,22 @@
                 <div class="md-form">
                   <label for="nameext">Name extension</label>
                   <input type="text" name="nameext" class="form-control " id="nameext" aria-describedby="ext">
-                  <small id="ext-mute" class="form-text text-muted mb-4">
+                  <small id="ext-mute" class="form-text text-muted">
                     (optional)
                   </small>
                 </div>
 
-                <div align="left" class="form-check pl-0">
+                <div align="left" class="pl-0 mt-0">
                   <label for="username" style="color : #757575">Gender</label>
                   <div class="">
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input"  name="gender" id="Female" required="required">
+                      <input type="radio" class="form-check-input"  name="gender" value="Female" required="required">
                       <label class="form-check-label" for="materialInline1">Female</label>
                     </div>
 
                     <!-- Material inline 2 -->
                     <div class="form-check form-check-inline">
-                      <input type="radio" class="form-check-input" name="gender" id="male" required="required">
+                      <input type="radio" class="form-check-input" name="gender" value="male" required="required">
                       <label class="form-check-label" for="materialInline2">male</label>
                     </div>
                   </div>
@@ -121,6 +121,8 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-rounded btn-secondary" data-dismiss="modal">Close</button>
               <button type="submit" class="btn aqua-gradient btn-rounded waves-effect waves-light">Save changes</button>
+              <input type="hidden" name="action" id="action">
+              <input type="hidden" name="id" id="id">
             </div>
           </form>
         </div>

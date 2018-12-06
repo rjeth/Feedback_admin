@@ -5,8 +5,8 @@
     while ($row = mysqli_fetch_assoc($sql)) {
         $button = '<a name="edit" ui_id="'.$row['ui_id'].'"><i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i></a>&nbsp;<a name="delete" ui_id="'.$row['ui_id'].'"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i></a>&nbsp;<a name="view" ui_id="'.$row['ui_id'].'"><i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="view Information"></i></a>';
         $output['data'][] = array(
+            $row['sname'],
             $row['fname'],
-            $row['mname'],
             $button
         );
     }
