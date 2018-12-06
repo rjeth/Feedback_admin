@@ -20,11 +20,14 @@
       wheelPropagation: true,
       minScrollbarLength: 20
     });
+
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="tooltip"]').tooltip();
     });
+
     $('.mdb_upload').mdb_upload();
-    (function () {
+
+    $(function () {
       'use strict';
       window.addEventListener('load', function () {
         var forms = document.getElementsByClassName('needs-validation');
@@ -39,25 +42,10 @@
         });
       }, false);
     })();
-    $(document).ready(function () {
-      $('#side-val').text("User Management");
-      $('#dtMaterialDesignExample').DataTable();
-       $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
-         $(this).parent().append($(this).children());
-       });
-       $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('input').each(function () {
-         $('.dataTables_filter input').attr("placeholder", "Search");
-         $('.dataTables_filter input').removeClass('form-control-sm');
-       });
-       $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
-       $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
-       $('#dtMaterialDesignExample_wrapper select').removeClass(
-         'custom-select custom-select-sm form-control form-control-sm');
-       $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
-       $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
-       $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
-       $('.datepicker').pickadate();
-    });
+
+    $('#side-val').text("User Management");
+
+    $('.datepicker').pickadate();
   </script>
   <script>
     var table = $('#dtMaterialDesignExample').DataTable({
@@ -72,67 +60,40 @@
           'orderable': false
         }
       ]
-    });
-    $('#add').click(function(){
-        $('#action').val('Add');
-    });
+    })
     function Validate(){
-            $.ajax({
-                url:'function.php',
-                method:'POST',
-                data:$('#vform').serialize(),
-                success:function(data){
-                  toastr["info"]("I was launched via jQuery!"))
-                    .then((value) => {
-                        $('#dtMaterialDesignExample').modal('hide');
-                        table.ajax.reload();
-                    })
-                }
-            })
-            return false;
-        }
-        $('#add').click(function(){
-           $('#action').val('Add');
-           $('#loc').val('');
-       });
-       $(document).on('click','button[name="edit"]',function(){
-           $('#action').val('Edit');
-           var id = $(this).attr('id');
-           $.ajax({
-               url:'fetch_single.php',
-               method:'POST',
-               data:{
-                   id:id
-               },
-               dataType:'json',
-               success:function(data){
-                   $('#id').val(id);
-                   $('#exampleModal').modal('show');
-                   $('#loc').val(data.loc_name);
-               }
-           })
-       });
-       $(document).on('click','button[name="delete"]',function(){
-           $('#action').val('Delete');
-           var id = $(this).attr('id');
-           swal('Are you sure you want to delete this?','','warning',{
-               buttons:true,
-               dangerMode:true
-           })
-           .then((value) => {
-               if(value){
-                   $.ajax({
-                       url:'function.php',
-                       method:'POST',
-                       data:{
-                           id:id,
-                           action:'Delete'
-                       },
-                       success:function(data){
-                           table.ajax.reload();
-                       }
-                   })
-               }
-           })
-       });
+        $.ajax({
+            url:'function.php',
+            method:'POST',
+            data:$('#vform').serialize(),
+            success:function(data){
+                swal(data,'','success',{
+                    closeOnClickOutside:false
+                })
+                .then((value) => {
+                    $('#exampleModal').modal('hide');
+                    table.ajax.reload();
+                })
+            }
+        })
+        return false;
+    }
+    $('#add').click(function () {
+      $('#action').val('Add');
+    });
+  </script>
+  <script>
+    $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
+      $(this).parent().append($(this).children());
+    });
+    $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('input').each(function () {
+      $('.dataTables_filter input').attr("placeholder", "Search");
+      $('.dataTables_filter input').removeClass('form-control-sm');
+    });
+    $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
+    $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
+    $('#dtMaterialDesignExample_wrapper select').removeClass('custom-select custom-select-sm form-control form-control-sm');
+    $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
+    $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
+    $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
   </script>

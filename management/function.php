@@ -2,7 +2,7 @@
     include '../../core/config.php';
     $sname = $_POST['surname'];
     $fname = $_POST['firstname'];
-    $lname = $_POST['lastname'];
+    $mname = $_POST['middlename'];
     $extname = $_POST['nameext'];
     $bday = $_POST['birthday'];
     $bdayplace = $_POST['placebirth'];
@@ -29,7 +29,7 @@
         )VALUES(
           '$sname',
           '$fname',
-          '$lname',
+          '$mname',
           '$extname',
           '$bday',
           '$bdayplace',

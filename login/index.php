@@ -4,7 +4,7 @@
     <div class="card z-depth-0 col-md-5 col-md-offset-3">
       <div class="card-body">
         <div class="text-center mb-5">
-          <img src="../dist/img/logo.png" class="w-20 mx-auto"></img>
+          <img src="../dist/img/logo.png" class="w-25 mx-auto"></img>
         </div>
         <p class="card-subtitle text-center text-black-50 mb-5">Welcome back! Please login to your account.</p>
 

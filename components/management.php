@@ -66,8 +66,8 @@
                 </div>
 
                 <div class="md-form">
-                  <label for="lastname">Last name</label>
-                  <input type="text" name="lastname" class="form-control " id="lastname" required="required">
+                  <label for="middlename">Middle name</label>
+                  <input type="text" name="middlename" class="form-control " id="middlename" required="required">
                   <div class="invalid-feedback">
                     Lastname is required
                   </div>
