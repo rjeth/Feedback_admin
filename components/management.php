@@ -79,7 +79,7 @@
 
                 <div class="md-form">
                   <label for="nameext">Name extension</label>
-                  <input type="text" name="nameext" class="form-control" id="nameext" aria-describedby="ext" required>
+                  <input type="text" name="nameext" class="form-control" id="nameext" aria-describedby="ext" >
                   <small id="ext-mute" class="form-text text-muted">
                     Input N/A if the user doesn't have
                   </small>

@@ -24,10 +24,10 @@
                 <a href="../management" class="waves-effect">User management</a>
               </li>
               <li>
-                <a href="../admin-accounts" class="waves-effect">Admin Accounts</a>
+                <a href="../division" class="waves-effect">Division</a>
               </li>
               <li>
-                <a href="../division" class="waves-effect">Division</a>
+                <a href="../division" class="waves-effect">Position</a>
               </li>
             </ul>
           </div>

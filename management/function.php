@@ -12,7 +12,7 @@
         echo 'Added Successfully';
     }
     if ($action == 'Edit') {
-        mysqli_query($connect, "UPDATE userinfo SET sname = '$sname' fname = '$fname'  mname = '$mname'  extname = '$extname' gender= '$gender' WHERE id = $id");
+        mysqli_query($connect, "UPDATE userinfo SET sname = '$sname', fname = '$fname' , mname = '$mname',  extname = '$extname', gender= '$gender' WHERE id = $id");
         echo 'Update Successfully';
     }
     if ($action == 'Delete') {

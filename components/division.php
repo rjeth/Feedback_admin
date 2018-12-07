@@ -1,7 +1,7 @@
 <section>
   <section>
     <div class="mb-3" align="right">
-      <button type="button" class="btn btn-warning btn-floating" data-toggle="modal" data-target="#exampleModalCenter">
+      <button type="button" class="btn btn-warning btn-floating" id="add" data-toggle="modal" data-target="#exampleModalCenter">
         <i class="fal fa-plus"></i>
       </button>
       <button type="button" class="btn btn-floating btn-danger">
@@ -11,7 +11,6 @@
         <i class="fal fa-grip-horizontal"></i>
       </button>
     </div>
-
   </section>
 
   <section>
@@ -20,99 +19,57 @@
         <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
           <thead>
             <tr>
-              <th class="th-sm"></th>
-              <th class="th-sm">NAME
+              <th class="th-sm">Name
               </th>
-              <th class="th-sm">DESCRIPTION
+              <th class="th-sm">Full Division Name
               </th>
-              <th class="th-sm">ACTION
+              <th class="th-sm">Action
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td scope="col" width="50"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image" width="50"></td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td width="30">
-                <div class="mt-3 mx-auto">
-                  <a>
-                    <i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="View Information"></i>
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td scope="col" width="50"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" class="img-fluid z-depth-1 rounded-circle" alt="Responsive image" width="50"></td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td>
-                <p class="mt-3">Sample</p>
-              </td>
-              <td width="30">
-                <div class="mt-3 mx-auto">
-                  <a>
-                    <i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Update"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i>
-                  </a>
-                  <a>
-                    <i class="fas fa-info" data-toggle="tooltip" data-placement="bottom" title="View Information"></i>
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
         </table>
       </div>
     </div>
   </section>
 
   <section>
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade right" id="exampleModalCenter" name="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-full-height modal-right modal-md" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <div class="modal-header text-center">
+            <h5 class="modal-title w-100" id="exampleModalLongTitle">Modal title</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation" novalidate="novalidate">
+            <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation">
+
               <div class="w-75 mx-auto">
+
                 <div class="md-form">
-                  <label for="username">Surname</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
+                  <label for="surname">Acronym</label>
+                  <input type="text" name="acro" class="form-control" id="acro" required="required">
                   <div class="invalid-feedback">
-                    Username is required
+                    Acronym is required
                   </div>
                 </div>
 
                 <div class="md-form">
-                  <label for="username">First name</label>
-                  <input type="text" name="username" class="form-control " id="username" required="required">
+                  <label for="firstname">Full Division Name</label>
+                  <textarea type="text" name="fdname" class="form-control md-textarea" id="fdname" required="required"></textarea>
                   <div class="invalid-feedback">
-                    Username is required
+                    Full Division Name is required
                   </div>
                 </div>
+
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-rounded btn-secondary" data-dismiss="modal">Close</button>
               <button type="submit" class="btn aqua-gradient btn-rounded waves-effect waves-light">Save changes</button>
+              <input type="hidden" name="action" id="action">
+              <input type="hidden" name="id" id="id">
             </div>
           </form>
         </div>
@@ -121,6 +78,3 @@
   </section>
 
 </section>
-<script>
-  $('.datepicker').pickadate();
-</script>
