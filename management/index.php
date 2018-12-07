@@ -44,7 +44,6 @@
     })();
 
     $('#side-val').text("User Management");
-
     $('.datepicker').pickadate();
   </script>
   <script>
@@ -56,75 +55,77 @@
       },
       'columnDefs': [
         {
-          'targets': 2,
+          'targets': 5,
           'orderable': false
         }
       ]
     })
-    function Validate(){
-        $.ajax({
-            url:'function.php',
-            method:'POST',
-            data:$('#vform').serialize(),
-            success:function(data){
-                swal(data,'','success',{
-                  swal.close()
-                  showConfirmButton: false
-                })
-                .then((value) => {
-                    $('#exampleModalCenter').modal('hide');
-                      toastr["success"]("I was launched via jQuery!");
-                    table.ajax.reload();
-                })
-            }
-        })
-        return false;
+    function Validate() {
+      $.ajax({
+        url: 'function.php',
+        method: 'POST',
+        data: $('#vform').serialize(),
+        success: function (data) {
+          swal(data, '', 'success', {
+            showCancelButton: false,
+            showConfirmButton: false
+          }).then((value) => {
+            $('#exampleModalCenter').modal('hide');
+            toastr["success"]("I was launched via jQuery!");
+            table.ajax.reload();
+          })
+        }
+      })
+      return false;
     }
-    $('#add').click(function(){
-        $('#action').val('Add');
-        $('#surname').val('');
+    $('#add').click(function () {
+      $('#action').val('Add');
+      $('#surname').val('');
     });
-    $(document).on('click','a[name="edit"]',function(){
-        $('#action').val('Edit');
-        var id = $(this).attr('id');
-        $.ajax({
-            url:'fetch_single.php',
-            method:'POST',
-            data:{
-                id:id
-            },
-            dataType:'json',
-            success:function(data){
-                $('#id').val(id);
-                $('#exampleModalCenter').modal('show');
-                $('#surname').val(data.sname);
-            }
-        })
+    $(document).on('click', 'a[name="edit"]', function () {
+      $('#action').val('Edit');
+      var id = $(this).attr('id');
+      $.ajax({
+        url: 'fetch_single.php',
+        method: 'POST',
+        data: {
+          id: id
+        },
+        dataType: 'json',
+        success: function (data) {
+          $('#id').val(id);
+          $('#exampleModalCenter').modal('show');
+          $('#surname').val(data.sname);
+          $('#firstname').val(data.fname);
+          $('#middlename').val(data.mname);
+          $('#nameext').val(data.extname);
+          $('#gender_holder').val(data.gender)
+        }
+      })
     });
 
-    $(document).on('click','a[name="delete"]',function(){
-        $('#action').val('Delete');
-        var id = $(this).attr('id');
-        swal('Are you sure you want to delete this?','','warning',{
-            buttons:true,
-            dangerMode:true
-        })
-        .then((value) => {
-            if(value){
-                $.ajax({
-                    url:'function.php',
-                    method:'POST',
-                    data:{
-                        id:id,
-                        action:'Delete'
-                    },
-                    success:function(data){
-                        toastr["info"]("I was launched via jQuery!");
-                        table.ajax.reload();
-                    }
-                })
+    $(document).on('click', 'a[name="delete"]', function () {
+      $('#action').val('Delete');
+      var id = $(this).attr('id');
+      swal('Are you sure you want to delete this?', '', 'warning', {
+        buttons: true,
+        dangerMode: true
+      }).then((value) => {
+        if (value) {
+          $.ajax({
+            url: 'function.php',
+            method: 'POST',
+            data: {
+              id: id,
+              action: 'Delete'
+            },
+            success: function (data) {
+              toastr["info"]("I was launched via jQuery!");
+              table.ajax.reload();
             }
-        })
+          })
+        }
+      })
     });
   </script>
   <script>

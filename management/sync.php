@@ -7,8 +7,11 @@
         '<a name="edit" id="'.$row['id'].'"><i class="fas fa-edit" data-toggle="tooltip" data-placement="bottom" title="Edit"></i></a>&nbsp;
           <a name="delete" id="'.$row['id'].'"><i class="fas fa-trash-alt" data-toggle="tooltip" data-placement="bottom" title="Delete"></i></a>';
         $output['data'][] = array(
-            $row['sname'],
-            $row['fname'],
+            $row['sname' ],
+            $row['fname' ],
+            $row['mname' ],
+            $row['extname' ],
+            $row['gender'],
             $button
         );
     }
