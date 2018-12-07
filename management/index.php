@@ -44,6 +44,7 @@
     })();
 
     $('#side-val').text("User Management");
+
     $('.datepicker').pickadate();
   </script>
   <script>
@@ -66,10 +67,7 @@
         method: 'POST',
         data: $('#vform').serialize(),
         success: function (data) {
-          swal(data, '', 'success', {
-            showCancelButton: false,
-            showConfirmButton: false
-          }).then((value) => {
+          swal(data, '', 'success', {closeOnClickOutside: false}).then((value) => {
             $('#exampleModalCenter').modal('hide');
             toastr["success"]("I was launched via jQuery!");
             table.ajax.reload();
@@ -81,6 +79,12 @@
     $('#add').click(function () {
       $('#action').val('Add');
       $('#surname').val('');
+      $('#firstname').val('');
+      $('#middlename').val('');
+      $('#nameext').val('');
+      $('#male').prop('checked', false);
+      $('#female').prop('checked', false);
+      $('label').removeClass("active");
     });
     $(document).on('click', 'a[name="edit"]', function () {
       $('#action').val('Edit');
@@ -94,16 +98,20 @@
         dataType: 'json',
         success: function (data) {
           $('#id').val(id);
+          $('label').addClass("active");
           $('#exampleModalCenter').modal('show');
           $('#surname').val(data.sname);
           $('#firstname').val(data.fname);
           $('#middlename').val(data.mname);
           $('#nameext').val(data.extname);
-          $('#gender_holder').val(data.gender)
+          if (data.gender == 'Male') {
+            $('#male').prop('checked', true);
+          } else {
+            $('#female').prop('checked', true);
+          }
         }
       })
     });
-
     $(document).on('click', 'a[name="delete"]', function () {
       $('#action').val('Delete');
       var id = $(this).attr('id');

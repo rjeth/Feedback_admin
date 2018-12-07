@@ -49,7 +49,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation" >
+            <form method="POST" id="vform" onsubmit="return Validate()" class="text-center needs-validation">
 
               <div class="w-75 mx-auto">
 
@@ -79,26 +79,24 @@
 
                 <div class="md-form">
                   <label for="nameext">Name extension</label>
-                  <input type="text" name="nameext" class="form-control " id="nameext" aria-describedby="ext" required>
+                  <input type="text" name="nameext" class="form-control" id="nameext" aria-describedby="ext" required>
                   <small id="ext-mute" class="form-text text-muted">
                     Input N/A if the user doesn't have
                   </small>
                 </div>
 
-                <input type="text" name="gender_holder" id="gender_holder">
-
                 <div align="left" class="pl-0 mt-0">
                   <div class="form-row">
                     <label for="username" style="color : #757575">Gender</label>
                     <div class="form-check">
-                      <input type="radio" class="form-check-input" id="materialGroupExample1" name="gender" value="Female" required>
-                      <label class="form-check-label" for="materialGroupExample1">Female</label>
+                      <input type="radio" class="form-check-input" id="female" name="gender" value="Female" required>
+                      <label class="form-check-label" for="female">Female</label>
                     </div>
 
                     <!-- Group of material radios - option 2 -->
                     <div class="form-check">
-                      <input type="radio" class="form-check-input" id="materialGroupExample2" name="gender" value="Male" required>
-                      <label class="form-check-label" for="materialGroupExample2">Male</label>
+                      <input type="radio" class="form-check-input" id="male" name="gender" value="Male" required>
+                      <label class="form-check-label" for="male">Male</label>
                     </div>
                     <div class="invalid-feedback">
                       You must to select before submitting.
