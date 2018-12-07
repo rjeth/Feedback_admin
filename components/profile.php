@@ -96,6 +96,15 @@
               </div>
 
             </div>
+
+
+            <div class="w-50 mt-5">
+              <h4>Delete Account</h4>
+              <div class="mt-2">
+                <button class="btn btn-danger btn-rounded waves-effect waves-light z-depth-0" type="submit">Delete Account</button>
+              </div>
+
+            </div>
           </div>
           <!--/.Panel 2-->
           <!--Panel 3-->
