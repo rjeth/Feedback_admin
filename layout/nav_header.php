@@ -51,7 +51,7 @@
         <span class="clearfix d-none d-sm-inline-block">Support</span></a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link dropdown-toggle waves-effect" href="../profile/" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fa fa-user"></i>
         <span class="clearfix d-none d-sm-inline-block">Profile</span></a>
     </a>
