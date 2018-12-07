@@ -8,7 +8,7 @@
   </header>
   <main>
     <div class="container-fluid">
-      <?php include('../components/division.php'); ?>
+      <?php include('../components/profile.php'); ?>
     </div>
   </main>
   <?php include('../layout/footer.php'); ?>

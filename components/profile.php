@@ -1,33 +1,46 @@
 <section>
   <section>
-    <div class="mb-3" align="right">
-      <button type="button" class="btn btn-warning btn-floating" id="add" data-toggle="modal" data-target="#exampleModalCenter">
-        <i class="fal fa-plus"></i>
-      </button>
-      <button type="button" class="btn btn-floating btn-danger">
-        <i class="fal fa-list"></i>
-      </button>
-      <button type="button" class="btn btn-info btn-floating">
-        <i class="fal fa-grip-horizontal"></i>
-      </button>
-    </div>
-  </section>
+    <div class="row">
+      <div class="col-lg-3 mb-4">
+        <div class="list-group z-depth-1">
+          <a href="#" class="list-group-item active">
+            Cras justo odio</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
 
-  <section>
-    <div class="card mb-5 ">
-      <div class="card-body table-responsive">
-        <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
-          <thead>
-            <tr>
-              <th class="th-sm">Name
-              </th>
-              <th class="th-sm">Full Division Name
-              </th>
-              <th class="th-sm">Action
-              </th>
-            </tr>
-          </thead>
-        </table>
+        <div class="card">
+          <div class="card-body">
+            <div class="text-left">
+              <h2>Profile</h2>
+              <hr>
+            </div>
+
+            <div class="w-50">
+              <div class="md-form">
+                <label for="surname" class="active">Account Id</label>
+                <input type="text" name="acro" class="form-control" id="acro" required="required" value="sampple" disabled>
+                <div class="invalid-feedback">
+                  Acronym is required
+                </div>
+              </div>
+
+              <div class="md-form">
+                <label for="surname" class="active">Name</label>
+                <input type="text" name="acro" class="form-control" id="acro" required="required" value="sampple">
+                <div class="invalid-feedback">
+                  Acronym is required
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </div>
   </section>

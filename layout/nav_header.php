@@ -51,13 +51,13 @@
         <span class="clearfix d-none d-sm-inline-block">Support</span></a>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle waves-effect" href="../profile/" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link dropdown-toggle waves-effect" href="" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fa fa-user"></i>
         <span class="clearfix d-none d-sm-inline-block">Profile</span></a>
     </a>
     <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="userDropdown">
       <a class="dropdown-item" href="../login">Log Out</a>
-      <a class="dropdown-item" href="#">My account</a>
+      <a class="dropdown-item" href="../profile/">My account</a>
     </div>
   </li>
 
