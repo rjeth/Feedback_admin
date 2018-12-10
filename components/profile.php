@@ -58,7 +58,7 @@
 
               <div class="md-form">
                 <label for="surname">new password</label>
-                <input type="text" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
+                <input type="password" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
                 <div class="invalid-feedback">
                   Acronym is required
                 </div>
@@ -66,7 +66,7 @@
 
               <div class="md-form">
                 <label for="surname">confirm new password</label>
-                <input type="text" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
+                <input type="password" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
                 <div class="invalid-feedback">
                   Acronym is required
                 </div>
@@ -99,9 +99,9 @@
 
 
             <div class="w-50 mt-5">
-              <h4>Delete Account</h4>
+              <h4>Deactivate</h4>
               <div class="mt-2">
-                <button class="btn btn-danger btn-rounded waves-effect waves-light z-depth-0" type="submit">Delete Account</button>
+                <button class="btn btn-danger btn-rounded waves-effect waves-light z-depth-0" type="submit">Deactivate</button>
               </div>
 
             </div>

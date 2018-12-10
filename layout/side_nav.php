@@ -27,6 +27,9 @@
                 <a href="../management" class="waves-effect">User management</a>
               </li>
               <li>
+                <a href="../system_management" class="waves-effect">System management</a>
+              </li>
+              <li>
                 <a href="../division" class="waves-effect">Division</a>
               </li>
               <li>

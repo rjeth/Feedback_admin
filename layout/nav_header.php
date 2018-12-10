@@ -16,7 +16,7 @@
         <i class="fa fa-bell"></i>
         <span class="d-none d-md-inline-block">Notifications</span>
       </a>
-      <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+      <!--  div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
         <a class="dropdown-item" href="#">
           <i class="fa fa-money mr-2" aria-hidden="true"></i>
           <span>New order received</span>
@@ -38,7 +38,7 @@
             <i class="fa fa-clock-o" aria-hidden="true"></i>
             53 min</span>
         </a>
-      </div>
+      </div-->
     </li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle waves-effect" href="" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
