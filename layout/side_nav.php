@@ -49,7 +49,7 @@
           <div class="collapsible-body">
             <ul>
               <li>
-                <a href="../pages/login.html" class="waves-effect">System</a>
+                <a href="../reports" class="waves-effect">System</a>
               </li>
             </ul>
           </div>
