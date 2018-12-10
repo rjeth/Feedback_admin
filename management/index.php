@@ -55,7 +55,7 @@
       },
       'columnDefs': [
         {
-          'targets': 5,
+          'targets': 7,
           'orderable': false
         }
       ]
@@ -81,6 +81,8 @@
       $('#firstname').val('');
       $('#middlename').val('');
       $('#nameext').val('');
+      $('#username').val('');
+      $('#password').val('');
       $('#male').prop('checked', false);
       $('#female').prop('checked', false);
       $('label').removeClass("active");
@@ -103,6 +105,8 @@
           $('#firstname').val(data.fname);
           $('#middlename').val(data.mname);
           $('#nameext').val(data.extname);
+          $('#username').val(data.username);
+          $('#password').val(data.password);
           if (data.gender == 'Male') {
             $('#male').prop('checked', true);
           } else {

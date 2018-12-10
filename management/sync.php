@@ -11,6 +11,8 @@
             $row['fname' ],
             $row['mname' ],
             $row['extname' ],
+            $row['username' ],
+              $row['password' ],
             $row['gender'],
             $button
         );

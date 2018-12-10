@@ -8,6 +8,8 @@
         "fname" => $row['fname'],
         "mname" => $row['mname'],
         "extname" => $row['extname'],
+        "username" => $row['username'],
+        "password" => $row['password'],
         "gender" => $row['gender']
     );
     echo json_encode($output);

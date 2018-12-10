@@ -27,6 +27,10 @@
               </th>
               <th class="th-sm">Name extension
               </th>
+              <th class="th-sm">Username
+              </th>
+              <th class="th-sm">Password
+              </th>
               <th class="th-sm">Gender
               </th>
               <th class="th-sm">Action
@@ -102,6 +106,24 @@
                       You must to select before submitting.
                     </div>
                   </div>
+                </div>
+
+                <div class="md-form">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" class="form-control " id="username" required>
+                  <div class="invalid-feedback">
+                    Username is required
+                  </div>
+                </div>
+
+                <div class="md-form">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" class="form-control" id="password" aria-describedby="ext" >
+                  <small id="ext-mute" class="form-text text-muted">
+
+All new passwords must contain at least 8 characters.
+We also suggest having at least one capital and one lower-case letter (Aa-Zz), one special symbol (#, &, % etc), and one number (0-9) in your password for the best strength.
+                  </small>
                 </div>
 
 
