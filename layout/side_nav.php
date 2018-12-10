@@ -21,7 +21,7 @@
           <div class="collapsible-body">
             <ul>
               <li>
-                <a href="../management" class="waves-effect">Admin Account</a>
+                <a href="../admin_management" class="waves-effect">Admin Account</a>
               </li>
               <li>
                 <a href="../management" class="waves-effect">User management</a>
@@ -43,7 +43,7 @@
         </li>
         <li>
           <a class="collapsible-header waves-effect arrow-r">
-            <i class="fa fa-dashboard"></i>
+            <i class="fa fa-chart-area"></i>
             Report<i class="fal fa-angle-down rotate-icon"></i>
           </a>
           <div class="collapsible-body">

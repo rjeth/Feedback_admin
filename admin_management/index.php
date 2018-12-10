@@ -8,7 +8,7 @@
   </header>
   <main>
     <div class="container-fluid">
-      <?php include('../components/division.php'); ?>
+      <?php include('../components/admin_management.php'); ?>
     </div>
   </main>
   <?php include('../layout/footer.php'); ?>
@@ -43,9 +43,8 @@
       }, false);
     })();
 
-      $('#side-val').text("User Management");
-      $('.mdb-select').materialSelect();
-      $('.datepicker').pickadate();
+    $('#side-val').text("User Management");
+    $('.datepicker').pickadate();
   </script>
   <script>
     var table = $('#dtMaterialDesignExample').DataTable({
@@ -56,7 +55,7 @@
       },
       'columnDefs': [
         {
-          'targets': 2,
+          'targets': 7,
           'orderable': false
         }
       ]
@@ -78,9 +77,15 @@
     }
     $('#add').click(function () {
       $('#action').val('Add');
-      $('#divid').val('');
-      $('#divname').val('');
-
+      $('#surname').val('');
+      $('#firstname').val('');
+      $('#middlename').val('');
+      $('#nameext').val('');
+      $('#username').val('');
+      $('#password').val('');
+      $('#male').prop('checked', false);
+      $('#female').prop('checked', false);
+      $('label').removeClass("active");
     });
     $(document).on('click', 'a[name="edit"]', function () {
       $('#action').val('Edit');
@@ -96,8 +101,17 @@
           $('#id').val(id);
           $('label').addClass("active");
           $('#exampleModalCenter').modal('show');
-          $('#divid').val(data.divcode);
-          $('#divname').val(data.divname);
+          $('#surname').val(data.sname);
+          $('#firstname').val(data.fname);
+          $('#middlename').val(data.mname);
+          $('#nameext').val(data.extname);
+          $('#username').val(data.username);
+          $('#password').val(data.password);
+          if (data.gender == 'Male') {
+            $('#male').prop('checked', true);
+          } else {
+            $('#female').prop('checked', true);
+          }
         }
       })
     });

@@ -19,7 +19,7 @@
         <table id="dtMaterialDesignExample" class="table table-striped" cellspacing="0" width="100%">
           <thead>
             <tr>
-              <th class="th-sm">Name
+              <th class="th-sm">Division Id
               </th>
               <th class="th-sm">Full Division Name
               </th>
@@ -48,16 +48,16 @@
               <div class="w-75 mx-auto">
 
                 <div class="md-form">
-                  <label for="surname">Acronym</label>
-                  <input type="text" name="acro" class="form-control" id="acro" required="required">
+                  <label for="divid">Division Id</label>
+                  <input type="text" name="divid" class="form-control" id="divid" required="required">
                   <div class="invalid-feedback">
-                    Acronym is required
+                    Division Id is required
                   </div>
                 </div>
 
                 <div class="md-form">
-                  <label for="firstname">Full Division Name</label>
-                  <textarea type="text" name="fdname" class="form-control md-textarea" id="fdname" required="required"></textarea>
+                  <label for="divname">Full Division Name</label>
+                  <textarea type="text" name="divname" class="form-control md-textarea" id="divname" required="required"></textarea>
                   <div class="invalid-feedback">
                     Full Division Name is required
                   </div>
