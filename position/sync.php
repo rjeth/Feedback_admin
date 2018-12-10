@@ -1,6 +1,6 @@
 <?php
     include '../config/database.php';
-    $sql = mysqli_query($connect, "SELECT * FROM division");
+    $sql = mysqli_query($connect, "SELECT * FROM position");
     $output = array('data' => array());
     while ($row = mysqli_fetch_assoc($sql)) {
         $button =

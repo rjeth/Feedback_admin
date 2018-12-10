@@ -21,10 +21,16 @@
           <div class="collapsible-body">
             <ul>
               <li>
+                <a href="../management" class="waves-effect">Admin Account</a>
+              </li>
+              <li>
                 <a href="../management" class="waves-effect">User management</a>
               </li>
               <li>
                 <a href="../division" class="waves-effect">Division</a>
+              </li>
+              <li>
+                <a href="../division" class="waves-effect">Section</a>
               </li>
               <li>
                 <a href="../division" class="waves-effect">Position</a>
@@ -34,13 +40,13 @@
         </li>
         <li>
           <a class="collapsible-header waves-effect arrow-r">
-            <i class="fa fa-photo"></i>
-            Pages<i class="fal fa-angle-down rotate-icon"></i>
+            <i class="fa fa-dashboard"></i>
+            Report<i class="fal fa-angle-down rotate-icon"></i>
           </a>
           <div class="collapsible-body">
             <ul>
               <li>
-                <a href="../pages/login.html" class="waves-effect">Login</a>
+                <a href="../pages/login.html" class="waves-effect">System</a>
               </li>
             </ul>
           </div>
