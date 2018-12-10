@@ -43,7 +43,7 @@
       }, false);
     })();
 
-    $('#side-val').text("User Management");
+
     $('.datepicker').pickadate();
   </script>
   <script>
