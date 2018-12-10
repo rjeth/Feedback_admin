@@ -8,7 +8,6 @@
             <a href="#panel105" class="list-group-item" data-toggle="tab" role="tab">
               Account</a>
 
-
         </div>
       </div>
       <div class="col-lg-6 mb-4">
@@ -35,6 +34,45 @@
               <div class="md-form mt-2">
                 <label for="surname" class="active">Date Created</label>
                 <p>2018-12-07 16:33:47</p>
+              </div>
+            </div>
+
+            <div class="text-left">
+              <h2>User Information</h2>
+              <hr>
+            </div>
+
+            <div class="w-50">
+              <div class="md-form">
+                <label for="surname" class="active">Surname</label>
+                <input type="text" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
+                <div class="invalid-feedback">
+                  Acronym is required
+                </div>
+              </div>
+              <div class="md-form">
+                <label for="surname" class="active">Firstname</label>
+                <input type="text" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
+                <div class="invalid-feedback">
+                  Acronym is required
+                </div>
+              </div>
+              <div class="md-form">
+                <label for="surname" class="active">Middlename</label>
+                <input type="text" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
+                <div class="invalid-feedback">
+                  Acronym is required
+                </div>
+              </div>
+              <div class="md-form">
+                <label for="surname" class="active">Name Extension</label>
+                <input type="text" name="acro" class="form-control" id="acro" required="required" placeholder=" ">
+                <div class="invalid-feedback">
+                  Acronym is required
+                </div>
+              </div>
+              <div class="mt-2">
+                <button class="btn aqua-gradient btn-rounded waves-effect waves-light z-depth-0" type="submit">Update user</button>
               </div>
             </div>
           </div>
